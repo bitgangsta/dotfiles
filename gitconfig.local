@@ -1,5 +1,15 @@
 [user]
-  name = Katie Gengler
-  email = katie@kmg.io
+  name = Daniel Jabbour
+  email = daniel@amoe.ba
 [pull]
   rebase = true
+[difftool "Kaleidoscope"]
+        cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+        prompt = false
+[diff]
+        tool = Kaleidoscope
+[merge]
+        tool = opendiff
+[github]
+        user = bitgangsta
