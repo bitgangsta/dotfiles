@@ -1,7 +1,6 @@
-Host github.com
-  User git
-  HostName github.com
-  IdentityFile ~/.ssh/github_id_rsa
+Host subspeak-dev
+ HostName 173.255.217.200
+ RemoteForward 52698 localhost:52698
 
 Host fgtest
   User fg
