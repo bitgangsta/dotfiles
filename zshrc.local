@@ -2,7 +2,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$HOME/bin:$PATH # Add home bin to path
 
 # Override our editor of choice (for lightweight editing anyway)
-export EDITOR="$HOME/bin/mate -w"
+export VISUAL="$HOME/bin/mate -w"
+export EDITOR=$VISUAL
 
 # Node shit
 export NODE_PATH="/usr/local/bin/node"
