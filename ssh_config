@@ -16,3 +16,6 @@ Host fgprod
   User fg
   HostName app.fundinggates.com
   IdentityFile ~/.ssh/fg_id_rsa
+
+Host localhost
+  ForwardAgent yes

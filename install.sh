@@ -18,6 +18,9 @@ done
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vimrc.bundles +BundleInstall +qa
 
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+
 ### Customization
 
 # echo "Enter the name of the computer: "

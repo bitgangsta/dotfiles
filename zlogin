@@ -1,18 +1,18 @@
 # ensure git-prompt is avail
-source ~/.git-prompt/zshrc.sh
+# source ~/.git-prompt/zshrc.sh
 
 # makes color constants available
-autoload -U colors
-colors
+# autoload -U colors
+# colors
 
 # enable colored output from ls, etc
-export CLICOLOR=1
+# export CLICOLOR=1
 
 # expand functions in the prompt
-setopt prompt_subst
+# setopt prompt_subst
 
-# prompt
-export PS1='$(git_super_status)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
+# GIT-enhanced prompt (disabled for now, switched to oh-my-zsh themes)
+# export PS1='$(git_super_status)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
