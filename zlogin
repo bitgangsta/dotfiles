@@ -1,5 +1,5 @@
 # ensure git-prompt is avail
-source ~/dotfiles/git-prompt/zshrc.sh
+source ~/.git-prompt/zshrc.sh
 
 # makes color constants available
 autoload -U colors

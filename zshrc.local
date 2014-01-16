@@ -1,4 +1,18 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$HOME/bin:$PATH # Add local bin to path
+PATH=$HOME/bin:$PATH # Add home bin to path
 
+# Override our editor of choice (for lightweight editing anyway)
 export EDITOR="$HOME/bin/mate -w"
+
+# Node shit
+export NODE_PATH="/usr/local/bin/node"
+export PATH="/usr/local/share/npm/bin:$PATH"
+
+# JAVA shit for jsdoc (and friends)
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+
+# Android stuff
+export PATH="$PATH:/Applications/adt-bundle-mac-x86_64-20130219/sdk/tools:/Applications/adt-bundle-mac-x86_64-20130219/sdk/platform-tools"
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
