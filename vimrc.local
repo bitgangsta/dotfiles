@@ -1,3 +1,6 @@
+" Powerline integration
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
-
 set t_Co=256
+
+" COLORZ
+colorscheme molokai
