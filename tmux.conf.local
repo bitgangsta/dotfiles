@@ -28,12 +28,5 @@ set-option -g pane-border-fg white
 set-option -g pane-border-bg black
 
 # Status Bar {{{
-set-option -g status-interval 1
-set-option -g status-left '___'
-set-option -g status-right "#T"
-set-option -g status-utf8 on
-set-option -g status-justify left
-set-option -g status-bg black
-set-option -g status-fg white
-set-option -g status-left-length 20
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
 # }}}

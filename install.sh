@@ -57,10 +57,11 @@ vim -u ~/.vimrc.bundles +BundleInstall +qa
 
 git_clone_or_update https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-git_clone_or_update https://github.com/erikw/tmux-powerline.git ~/.tmux-powerline
-
 # Install some shiz
-brew_install_ifn tmux reattach-to-user-namespace
+brew_install_ifn tmux reattach-to-user-namespace python
 
 # SSH Config
 remove_and_link "$HOME/dotfiles/ssh_config" "$HOME/.ssh/config"
+
+# Powerline
+pip install git+git://github.com/Lokaltog/powerline
