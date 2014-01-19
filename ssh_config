@@ -2,20 +2,21 @@ Host subspeak-dev
  HostName 173.255.217.200
  RemoteForward 52698 localhost:52698
 
-Host fgtest
+Host bptest
   User fg
   HostName test.app.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
 
-Host fgstaging
+Host bpstaging
   User fg
   HostName staging.app.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
 
-Host fgprod
+Host bpprod
   User fg
   HostName app.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
+
+Host lbqa
+  User dev
+  HostName qa.lenderboard.com
 
 Host localhost
   ForwardAgent yes
