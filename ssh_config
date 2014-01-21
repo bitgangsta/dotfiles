@@ -20,3 +20,11 @@ Host lbqa
 
 Host localhost
   ForwardAgent yes
+
+Host bsprod
+  User deploy
+  HostName direct.buzzstarter.com
+
+Host bsstaging
+  User deploy
+  HostName staging.buzzstarter.com
