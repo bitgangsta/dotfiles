@@ -13,7 +13,7 @@ ZSH_THEME="muse" # kolo is cool too
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git rails textmate ruby)
+plugins=(git textmate brew gem heroku ruby rails cake bower capistrano gnu-utils knife knife_ssh node npm osx postgres python rand-quote redis-cli rsync xcode)
 source $ZSH/oh-my-zsh.sh
 
 # Other user config
@@ -54,3 +54,12 @@ export POWERLINE_COMMAND="powerline -p ~/.config/powerline/config_files"
 
 # If you want the powerline zsh shell prompt ( I don't think I do):
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Some aliases I want last
+alias l='ls -lFh'     #size,show type,human readable
+alias la='ls -lAFh'   #long list,show almost all,show type,human readable
+alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+alias ldot='ls -ld .*'
+alias t='tail -f'
+alias gs='git status'

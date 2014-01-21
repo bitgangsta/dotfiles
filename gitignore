@@ -11,3 +11,7 @@ tmp/**/*
 zeus.json
 .idea/
 .amoeba.yml
+.rake_tasks
+.cake_task_cache
+.cap_tasks~
+.knife_comp~
