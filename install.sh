@@ -65,3 +65,4 @@ remove_and_link "$HOME/dotfiles/ssh_config" "$HOME/.ssh/config"
 
 # Powerline
 pip install git+git://github.com/Lokaltog/powerline
+pip install psutil

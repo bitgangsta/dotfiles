@@ -49,5 +49,8 @@ fi
 # Python scripts from homebrew should be on the path
 export PATH=/usr/local/share/python:$PATH
 
-# If you want the powerline zsh shell prompt:
+# Setup powerline config
+export POWERLINE_COMMAND="powerline -p ~/.config/powerline/config_files"
+
+# If you want the powerline zsh shell prompt ( I don't think I do):
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

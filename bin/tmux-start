@@ -1,5 +1,6 @@
 #!/bin/sh 
 export PATH=$PATH:/usr/local/bin
+export POWERLINE_COMMAND="powerline -p ~/.config/powerline/config_files"
 
 # abort if we're already inside a TMUX session
 [ "$TMUX" == "" ] || exit 0

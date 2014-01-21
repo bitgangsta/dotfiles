@@ -5,6 +5,7 @@ set-option -g default-command "reattach-to-user-namespace -l zsh"
 set -g mode-mouse on
 setw -g mouse-select-window on
 setw -g mouse-select-pane on
+set -g mouse-resize-pane on
 
 # act like vim
 unbind [
