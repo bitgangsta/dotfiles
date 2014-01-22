@@ -17,6 +17,9 @@ _rake () {
       rake --silent --tasks | cut -d " " -f 2 > .rake_tasks
     fi
     compadd `cat .rake_tasks`
+    if compset -P "SPEC="; then
+      compadd -S `ls spec/**/*.rb`
+    fi
   fi
 }
 
