@@ -16,7 +16,6 @@
   up = !git fetch origin && git rebase origin/master
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 [core]
-  excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
   ff = only

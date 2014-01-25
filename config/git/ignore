@@ -1,0 +1,33 @@
+# Automatically created by GitHub for Mac
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Local ignores
+*.sw[nop]
+.bundle
+.env
+db/*.sqlite3
+log/*.log
+rerun.txt
+tags
+tmp/**/*
+!tmp/cache/.keep
+zeus.json
+.idea/
+.amoeba.yml
+.rake_tasks
+.cake_task_cache
+.cap_tasks~
+.knife_comp~

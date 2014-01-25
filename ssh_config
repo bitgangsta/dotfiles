@@ -1,30 +1,42 @@
 Host subspeak-dev
- HostName 173.255.217.200
- RemoteForward 52698 localhost:52698
+  HostName 173.255.217.200
+  RemoteForward 52698 localhost:52698
+  ForwardAgent yes
 
-Host bptest
+Host bp-test
   User fg
   HostName test.app.fundinggates.com
+  ForwardAgent yes
 
-Host bpstaging
+Host bp-staging
   User fg
   HostName staging.app.fundinggates.com
+  ForwardAgent yes
 
-Host bpprod
+Host bp-production app.fundinggates.com
   User fg
   HostName app.fundinggates.com
+  ForwardAgent yes
 
-Host lbqa
-  User dev
+Host lb-qa qa.lenderboard.com
+  User deploy
   HostName qa.lenderboard.com
+  ForwardAgent yes
+
+Host lb-production app.lenderboard.com
+  User deploy
+  HostName 162.209.126.49
+  ForwardAgent yes
 
 Host localhost
   ForwardAgent yes
 
-Host bsprod
+Host bs-prod
   User deploy
   HostName direct.buzzstarter.com
+  ForwardAgent yes
 
-Host bsstaging
+Host bs-staging
   User deploy
   HostName staging.buzzstarter.com
+  ForwardAgent yes

@@ -1,4 +1,7 @@
 #!/bin/sh
+
+DOTFILEDIR=$PWD
+
 for name in *; do
   target="$HOME/.$name"
   if [ -e "$target" ]; then
@@ -61,7 +64,10 @@ git_clone_or_update https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 brew_install_ifn tmux reattach-to-user-namespace python
 
 # SSH Config
-remove_and_link "$HOME/dotfiles/ssh_config" "$HOME/.ssh/config"
+remove_and_link "$DOTFILEDIR/ssh_config" "$HOME/.ssh/config"
+
+# Private zsh config (for things like API keys)
+remove_and_link "$HOME/Dropbox/.nethome/.zshrc.private" "$HOME/.zshrc.private"
 
 # Powerline
 pip install git+git://github.com/Lokaltog/powerline

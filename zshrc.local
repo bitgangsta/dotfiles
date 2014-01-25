@@ -63,3 +63,6 @@ alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 alias ldot='ls -ld .*'
 alias t='tail -f'
 alias gs='git status'
+
+# Private config
+[[ -f ~/.zshrc.private ]] && source ~/.zshrc.private
